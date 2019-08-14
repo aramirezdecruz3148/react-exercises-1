@@ -1,25 +1,31 @@
-import React, { useState } from 'react';
+import React, { Component } from 'react';
 
-function CuteButton() {
-  const buttonStyles = {
-    marginRight: '10px',
-    marginLeft: '10px',
-    background: '#EE82EE',
-    color: 'white'
-  };
+export default class CuteButton extends Component {
+  state = {
+    count: 0
+  }
 
-  const tallyStyles = {
-    color: '#32CD32'
-  };
+  handleClick = () => {
+    this.setState({ count: this.state.count + 1 });
+  }
 
-  const [count, setCount] = useState(0);
+  render() { 
+    const buttonStyles = {
+      marginRight: '10px',
+      marginLeft: '10px',
+      background: '#EE82EE',
+      color: 'white'
+    };
 
-  return (
-    <>
-    <button onClick={() => setCount(count + 1)} style={buttonStyles}>She is CUTE</button>
-    <span style={tallyStyles}>Cute Tally: {count}</span>
-    </>
-  );
+    const tallyStyles = {
+      color: '#32CD32'
+    };
+
+    return ( 
+      <>
+        <button onClick={this.handleClick} style={buttonStyles}>She is CUTE</button>
+        <span style={tallyStyles}>Cute Tally: {this.state.count}</span>
+      </>
+    );
+  }
 }
-
-export default CuteButton;
