@@ -3,16 +3,22 @@ import img from '../assets/Pennie.jpg';
 import img2 from '../assets/Pennie2.jpg';
 import img3 from '../assets/Pennie3.jpg';
 import img4 from '../assets/Pennie4.jpg';
+import styles from './PuppyPics.css';
 
 const puppyArray = [img, img2, img3, img4];
 
 //make either arrow become disabled 
 
 function PuppyPics() {
+  console.log(styles)
   const style = {
     width: '300px',
     height: '300px',
     border: 'solid #FFFF99 5px'
+  };
+
+  const buttonStyles = {
+    color: '#48D1CC'
   };
 
   const [countObj, setCount] = useState({
@@ -34,9 +40,9 @@ function PuppyPics() {
 
   return (
     <>
-      <button disabled={countObj.previous} onClick={() => updateState(decrementNewCount)}>⇦</button>
+      <button className={styles.puppyPics} disabled={countObj.previous} onClick={() => updateState(decrementNewCount)}>⇦</button>
       <img style={style} src={puppyArray[countObj.count]}/>
-      <button disabled={countObj.next} onClick={() => updateState(incrementNewCount)}>⇨</button>
+      <button style={buttonStyles} disabled={countObj.next} onClick={() => updateState(incrementNewCount)}>⇨</button>
     </>
   );
 }
