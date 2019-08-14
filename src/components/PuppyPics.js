@@ -10,7 +10,6 @@ const puppyArray = [img, img2, img3, img4];
 //make either arrow become disabled 
 
 function PuppyPics() {
-  console.log(styles)
   const style = {
     width: '300px',
     height: '300px',

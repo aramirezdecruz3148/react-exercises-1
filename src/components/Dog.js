@@ -1,28 +1,32 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import CuteButton from './CuteButton';
 import MehButton from './MehButton';
 
-function Dog({ name, age, weight }) {
-  const stylePennieName = {
-    color: '#FFA500'
-  };
+export default class Dog extends Component {
+  static propTypes = {
+    name: PropTypes.string.isRequired,
+    age: PropTypes.number.isRequired,
+    weight: PropTypes.string
+  }
 
-  return (
+  render() {
+    const stylePennieName = {
+      color: '#FFA500'
+    };
+
+    const { name, age, weight } = this.props;
+
+    return (
     <>
-    <h4 style={stylePennieName}>{name}</h4>
-    <p>{age} years old</p>
-    <p>{weight ? weight : ''}</p>
-    <CuteButton />
-    <MehButton />
+      <h4 style={stylePennieName}>{name}</h4>
+      <p>{age} years old</p>
+      <p>{weight ? weight : ''}</p>
+      <CuteButton />
+      <MehButton />
     </>
-  );
+    );
+  }
 }
 
-Dog.propTypes = {
-  name: PropTypes.string.isRequired,
-  age: PropTypes.number.isRequired,
-  weight: PropTypes.string
-};
 
-export default Dog;
