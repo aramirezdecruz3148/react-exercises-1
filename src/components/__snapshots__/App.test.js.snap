@@ -1,7 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App component renders App 1`] = `
-<h1>
-  Hello World
-</h1>
+<Fragment>
+  <h2>
+    My Puppy
+  </h2>
+  <PuppyPics />
+  <Dog
+    age={7}
+    name="Pennie"
+    weight="13lbs"
+  />
+</Fragment>
 `;
