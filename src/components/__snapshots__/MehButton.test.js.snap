@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MehButton component renders MehButton 1`] = `
+<Fragment>
+  <button
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#EE82EE",
+        "color": "white",
+        "marginLeft": "10px",
+        "marginRight": "10px",
+      }
+    }
+  >
+    Meh, she is okay...
+  </button>
+  <span
+    style={
+      Object {
+        "color": "#32CD32",
+      }
+    }
+  >
+    Meh Tally: 
+    0
+  </span>
+</Fragment>
+`;

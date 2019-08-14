@@ -4,13 +4,13 @@ import CuteButton from './CuteButton';
 import MehButton from './MehButton';
 
 function Dog({ name, age, weight }) {
-  const stylePenieName = {
+  const stylePennieName = {
     color: '#FFA500'
   };
 
   return (
     <>
-    <h4 style={stylePenieName}>{name}</h4>
+    <h4 style={stylePennieName}>{name}</h4>
     <p>{age} years old</p>
     <p>{weight ? weight : ''}</p>
     <CuteButton />

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dog component renders Dog 1`] = `
+<Fragment>
+  <h4
+    style={
+      Object {
+        "color": "#FFA500",
+      }
+    }
+  />
+  <p>
+     years old
+  </p>
+  <p />
+  <CuteButton />
+  <MehButton />
+</Fragment>
+`;

@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CuteButton component renders CuteButton 1`] = `
+<Fragment>
+  <button
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#EE82EE",
+        "color": "white",
+        "marginLeft": "10px",
+        "marginRight": "10px",
+      }
+    }
+  >
+    She is CUTE
+  </button>
+  <span
+    style={
+      Object {
+        "color": "#32CD32",
+      }
+    }
+  >
+    Cute Tally: 
+    0
+  </span>
+</Fragment>
+`;
