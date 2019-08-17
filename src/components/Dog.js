@@ -5,8 +5,8 @@ import MehButton from './MehButton';
 
 export default class Dog extends Component {
   static propTypes = {
-    name: PropTypes.string.isRequired,
-    age: PropTypes.number.isRequired,
+    name: PropTypes.string,
+    age: PropTypes.number,
     weight: PropTypes.string
   }
 
